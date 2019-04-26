@@ -1,0 +1,79 @@
+.section__service-advantages
+  padding-top 100px
+  padding-bottom 100px
+  h2
+    color #444444
+    font-size 36px
+    font-weight 700
+    text-align center
+    span
+      color #3abdc9
+
+
+.service-advantages
+  &__list
+    margin-top 90px
+  &__item
+    max-width 540px
+    width 100%
+    margin-top 30px
+    position relative
+    &:not(:last-child)
+      background-color #fafafa
+      padding 50px
+      &:before
+        color #3abdc9
+        font-size 100px
+        font-weight 700
+        position absolute
+        top 15px
+        right 20px
+    &:nth-child(1)
+      &:before
+        content '1'
+    &:nth-child(2)
+      &:before
+        content '2'
+    &:nth-child(3)
+      &:before
+        content '3'
+    &:last-child
+      padding 30px
+      img
+        object-fit contain
+    h3
+      color #444444
+      font-size 24px
+      font-weight 700
+      line-height 36px
+      span
+        color #3abdc9
+    p
+      margin-top 20px
+      color #444444
+      font-size 16px
+      font-weight 300
+      line-height 28px
+      strong
+        font-weight 700
+  &__form
+    margin-top 30px
+    *
+      &:not(:last-child)
+        margin-right 10px
+    input
+      height 50px
+      border 1px solid #3abdc9
+      padding 0 20px
+      background-color #fafafa
+      &:nth-child(1)
+        max-width 180px
+      &:nth-child(2)
+        max-width 150px
+    .button
+      height 50px
+      border 1px solid #3abdc9
+      background-color #3abdc9
+      padding 0 40px
+      color #ffffff
+      font-size 16px
