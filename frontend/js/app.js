@@ -1,4 +1,5 @@
 import svgSprite from './inc/svg-sprite';
+import wrdSlider from './wrd-slider';
 
 
 
@@ -7,3 +8,5 @@ import svgSprite from './inc/svg-sprite';
 
 
 svgSprite(window, document);
+
+wrdSlider()

@@ -35,33 +35,14 @@ html(lang='ru')
       // СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
       section.section__special-sale.container.p-s__85 
         .wrd-slider
-          .special-sale.flex 
-            .special-sale__info
-              span.over-heading СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
-              h3 АРЕНДА И ПРОДАЖА МАЧТОВОГО ГРУЗОПАССАЖИРСКОГО ПОДЪЕМНИКА 
-                span ALIMAK SC 45/30
-              .flex
-                ul.special-sale__list 
-                  li.special-sale__item.flex
-                    p Грузоподъёмность:
-                    p 3,2 тонны
-                  li.special-sale__item.flex
-                    p Высота подъема: 
-                    p до 250 м
-                  li.special-sale__item.flex
-                    p Остановка: 
-                    p поэтажная плавная
-                ul.special-sale__list 
-                  li.special-sale__item.flex
-                    p Скоростной подъём: 	
-                    p до 65м/мин
-                  li.special-sale__item.flex
-                    p Кабина ШхДхВ: 
-                    p 1,5х3,9х2,3 м
-              button.button Узнать подробнее
-            .special-sale__img
-              img(src="images/special-sale.jpg" alt='')
-              
+          .wrd-slider__control.flex.j-c__s-b
+            button.wrd-slider__control_button.button--prev
+            button.wrd-slider__control_button.button--next
+          .wrd-slider__wrap.flex
+            +special-sale              
+            +special-sale              
+          
+                      
       // НАПРАВЛЕНИЯ РАБОТЫ
       section.section__areas-work.container
         h2 
@@ -74,7 +55,7 @@ html(lang='ru')
             p ПРОДАЖА
           li.areas-work__item 
             p УСЛУГИ
-        button.button Оставьте заявку
+        button.button.flex.a-i__c.j-c__c Оставьте заявку
         
       // ПРЕИМУЩЕСТВА НАШЕГО СЕРВИСА
       section.section__service-advantages.container.p-s__85

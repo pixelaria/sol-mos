@@ -2,6 +2,7 @@
   padding-top 100px
   padding-bottom 140px
 .special-sale
+  margin-right 50px
   &__info
     background-color #fafafa
     padding 40px 50px
@@ -42,6 +43,37 @@
   &__img
     max-width 440px
     margin-top 40px
-    margin-left -65px
+    margin-left -85px
     width 100%
     max-height 360px
+
+
+
+.wrd-slider
+  overflow hidden
+  position relative
+  padding-left 25px
+  padding-right 25px
+  &__wrap
+    width max-content
+    transition .33s
+  &__control
+    position absolute
+    top 0
+    bottom 0
+    left 5px
+    right 5px
+    height max-content
+    margin auto
+    z-index 2
+    &_button
+      width 50px
+      height 50px
+      box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+      border-radius 25px
+      background-color #ffffff
+      background-image url('../images/left-arrow.png')
+      background-position center
+      background-repeat no-repeat
+      &.button--next
+        transform rotate(180deg)
