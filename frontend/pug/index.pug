@@ -33,7 +33,7 @@ html(lang='ru')
         button.button Заказать консультацию
         
       // СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
-      section.section__special-sale.container.p-s__85 
+      section.section__special-sale.container.p-s__85#special
         .wrd-slider
           .wrd-slider__control.flex.j-c__s-b
             button.wrd-slider__control_button.button--prev
@@ -42,9 +42,8 @@ html(lang='ru')
             +special-sale              
             +special-sale              
           
-                      
       // НАПРАВЛЕНИЯ РАБОТЫ
-      section.section__areas-work.container
+      section.section__areas-work.container#areas
         h2 
           span НАПРАВЛЕНИЯ 
           |РАБОТЫ
@@ -55,10 +54,10 @@ html(lang='ru')
             p ПРОДАЖА
           li.areas-work__item 
             p УСЛУГИ
-        button.button.flex.a-i__c.j-c__c Оставьте заявку
+        a.button.flex.a-i__c.j-c__c(href="mailto:info@sol-mos.ru") Оставьте заявку
         
       // ПРЕИМУЩЕСТВА НАШЕГО СЕРВИСА
-      section.section__service-advantages.container.p-s__85
+      section.section__service-advantages.container.p-s__85#benefits
         h2 
           span ПРЕИМУЩЕСТВА 
           |НАШЕГО СЕРВИСА
