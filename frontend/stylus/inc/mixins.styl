@@ -1,0 +1,28 @@
+/*------------------------------------------------
+  Screen sizes
+------------------------------------------------*/
+screen = {
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+} 
+
+
+// Desktop first    
+sm-min()
+  @media screen and (min-width screen.sm)
+    {block}
+md-min()
+  @media screen and (min-width screen.md)
+    {block}    
+lg-min()
+  @media screen and (min-width screen.lg)
+    {block}    
+xl-min()
+  @media screen and (min-width screen.xl)
+    {block}     
+xxl-min()
+  @media screen and (min-width screen.xxl)
+    {block} 
