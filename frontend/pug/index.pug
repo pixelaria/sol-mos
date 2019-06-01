@@ -11,7 +11,7 @@ html(lang='ru')
         h1 АРЕНДА СТРОИТЕЛЬНОЙ ТЕХНИКИ
         p Аренда и продажа строительного оборудования. Профессиональное сопровождение на всех этапах работ: монтаж, установка, обслуживание и ремонт 
       // ПЕРВЫЙ ЭКРАН
-      section.section--advantages
+      section.section.section--advantages
         .container
           ul.advantages__list
             li.advantages__item.advantage
@@ -46,25 +46,26 @@ html(lang='ru')
             +special-sale              
           
       // НАПРАВЛЕНИЯ РАБОТЫ
-      section.section__areas-work.container#areas
-        h2 
+      section.section.section--areas-work.container#areas
+        h2.section__title
           span НАПРАВЛЕНИЯ 
           |РАБОТЫ
-        ul.areas-work__list.flex
+        ul.areas-work__list
           li.areas-work__item
             p АРЕНДА
           li.areas-work__item 
             p ПРОДАЖА
           li.areas-work__item 
             p УСЛУГИ
-        a.button.flex.a-i__c.j-c__c(href="mailto:info@sol-mos.ru") Оставьте заявку
+        a.button.button--areas-work(href="mailto:info@sol-mos.ru") Оставьте заявку
         
       // ПРЕИМУЩЕСТВА НАШЕГО СЕРВИСА
-      section.section__service-advantages.container.p-s__85#benefits
-        h2 
+      section.section--service-advantages.container#benefits
+        h2.section__title
           span ПРЕИМУЩЕСТВА 
           |НАШЕГО СЕРВИСА
-        ul.service-advantages__list.flex.f-w__w.j-c__s-b
+        
+        ul.service-advantages__list
           li.service-advantages__item 
             h3 УДОБСТВО НА КАЖДОМ ЭТАПЕ 
             p Вы получаете 

@@ -1,65 +1,28 @@
-.section__areas-work
-  background-color #fafafa
+.section
   padding-top 40px
-  position relative
-  height 480px
-  &:before
-    content ''
-    background url('../images/areas-work-section.png')
-    background-repeat no-repeat
-    position absolute
-    width 100%
-    height 100%
-    left 0
-    top 0
-    bottom 0
-    z-index 0
-  h2
-    color #3abdc9
-    font-size 36px
-    font-weight 700
-    background-color #fafafa
-    padding-top 31px
-    padding-bottom 29px
-    padding-left 340px
-    position relative
-    z-index 1
-    span
-      color #444444
-  .button
-    position absolute
-    right 20px
-    bottom -30px
-    width 190px
-    height 60px
-    box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
-    border-radius 30px
-    background-image linear-gradient(to right, #3fc6d2 0%, #3aabc9 100%)
-    color #ffffff
-    font-size 16px
-    font-weight 400
-    &:after
-      content ''
-      background url('../images/edit.png')
-      display block
-      width 26px
-      height 26px
-      margin-left 11px
-
+  padding-bottom 40px
+  
+  &--areas-work
+   font-size 13px
+   background-color #fafafa
+   
 .areas-work
   &__list
-    margin-left 420px
     position relative
     z-index 1
-    margin-top 55px
   &__item
-    &:not(:last-child)
-      margin-right -95px
+    display block
+    margin-bottom 60px
+    
+    &:last-child
+      margin-bottom 0
+      
     &:before
       content ''
       width 320px
       height 180px
       display block
+    
     &:nth-child(1)
       &:before
         background url('../images/areas-work-1.png')
@@ -71,7 +34,14 @@
         background url('../images/areas-work-3.png')
     p
       color #444444
-      font-size 24px
+      font-size 18px
       font-weight 700
-      margin-left 50px
-      margin-top 22px
+      padding-left 50px
+      height 60px
+      align-items center
+      display flex
+
+
+.button
+  &--areas-work
+    display none
