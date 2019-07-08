@@ -12,26 +12,24 @@
     z-index 1
   &__item
     display block
-    margin-bottom 60px
     
-    &:last-child
-      margin-bottom 0
-      
     &:before
       content ''
-      width 320px
-      height 180px
+      width 100%
+      padding-bottom 57%
       display block
+      background-position center
+      background-size cover
     
     &:nth-child(1)
       &:before
-        background url('../images/areas-work-1.png')
+        background-image url('../images/areas-work-1.png')
     &:nth-child(2)
       &:before
-        background url('../images/areas-work-2.png')
+        background-image url('../images/areas-work-2.png')
     &:nth-child(3)
       &:before
-        background url('../images/areas-work-3.png')
+        background-image url('../images/areas-work-3.png')
     p
       color #444444
       font-size 18px

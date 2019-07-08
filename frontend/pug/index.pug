@@ -5,11 +5,14 @@ html(lang='ru')
     title main page sol mos
   body
     include inc/header.pug
-    main.main.container
-      section.section__initial.container.p-s__85.flex.f-d__c.j-c__c.a-i__c
-        span.over-heading НАДЕЖНЫЙ ПАРТНЕР С 10-ЛЕТНИМ ОПЫТОМ РАБОТЫ
-        h1 АРЕНДА СТРОИТЕЛЬНОЙ ТЕХНИКИ
-        p Аренда и продажа строительного оборудования. Профессиональное сопровождение на всех этапах работ: монтаж, установка, обслуживание и ремонт 
+    main.main
+      section.section.section--initial
+        .container
+          .page
+            p.page__over НАДЕЖНЫЙ ПАРТНЕР С 10-ЛЕТНИМ ОПЫТОМ РАБОТЫ
+            h1.page__title АРЕНДА СТРОИТЕЛЬНОЙ ТЕХНИКИ
+            p.page__text Аренда и продажа строительного оборудования. Профессиональное сопровождение на всех этапах работ: монтаж, установка, обслуживание и ремонт 
+
       // ПЕРВЫЙ ЭКРАН
       section.section.section--advantages
         .container
@@ -33,72 +36,77 @@ html(lang='ru')
       section.section--order-consultation
         .container
           p Оставьте заявку и наши специалисты помогут выбрать оптимальное решение для вашей задачи
-          button.button Заказать консультацию
+          button.button.button--white Заказать консультацию
         
       // СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
-      section.section__special-sale.container.p-s__85#special
-        .wrd-slider
-          .wrd-slider__control.flex.j-c__s-b
-            button.wrd-slider__control_button.button--prev
-            button.wrd-slider__control_button.button--next
-          .wrd-slider__wrap.flex
-            +special-sale              
-            +special-sale              
+      section.section.section--special-sale#special
+        .container.p-s__85
+          .wrd-slider
+            .wrd-slider__control.flex.j-c__s-b
+              button.wrd-slider__control_button.button--prev
+              button.wrd-slider__control_button.button--next
+            .wrd-slider__wrap.flex
+              +special-sale              
+              +special-sale              
           
       // НАПРАВЛЕНИЯ РАБОТЫ
-      section.section.section--areas-work.container#areas
-        h2.section__title
-          span НАПРАВЛЕНИЯ 
-          |РАБОТЫ
-        ul.areas-work__list
-          li.areas-work__item
-            p АРЕНДА
-          li.areas-work__item 
-            p ПРОДАЖА
-          li.areas-work__item 
-            p УСЛУГИ
-        a.button.button--areas-work(href="mailto:info@sol-mos.ru") Оставьте заявку
+      section.section.section--areas-work#areas
+        .container
+          h2.section__title
+            span НАПРАВЛЕНИЯ 
+            |РАБОТЫ
+          ul.areas-work__list
+            li.areas-work__item
+              p АРЕНДА
+            li.areas-work__item 
+              p ПРОДАЖА
+            li.areas-work__item 
+              p УСЛУГИ
+          a.button.button--areas-work(href="mailto:info@sol-mos.ru") Оставьте заявку
         
       // ПРЕИМУЩЕСТВА НАШЕГО СЕРВИСА
-      section.section--service-advantages.container#benefits
-        h2.section__title
-          span ПРЕИМУЩЕСТВА 
-          |НАШЕГО СЕРВИСА
-        
-        ul.service-advantages__list
-          li.service-advantages__item 
-            h3 УДОБСТВО НА КАЖДОМ ЭТАПЕ 
-            p Вы получаете 
-              strong комплекс услуг 
-              |от квалифицированных специалистов. У вас 
-              strong нет необходимости тратить время и деньги 
-              |на обучение своих людей. 
-            p После окончания проекта (работ) не возникает вопрос о продаже ненужного оборудования или увольнении избыточного персонала.
-          li.service-advantages__item 
-            h3 ОПЕРАТИВНОСТЬ
-            p Аренда - это 
-              strong минимум времени от запроса оборудования до его получения. 
-              |При поломке техники или неявки персонала, вы оперативно получаете замену. 
-            p 
-              strong Работа идет без остановок 
-              |на отпуска и больничные. Один поставщик услуг способен удовлетворить нужды разных этапов строительства.
-          li.service-advantages__item 
-            h3 ЭКОНОМИЯ И КАЧЕСТВО
-            p 
-              strong Не нужны крупные затраты 
-              |на покупку оборудования, его хранение, обслуживание, ремонт, бухгалтерский учет  и утилизацию. 
-              strong Идет экономия на налогах. 
-            p У вас есть четкая картина затрат по технике, чтобы точно рассчитать бюджет проекта и контролировать расходы.
-            p Арендуемое оборудование и персонал имеет сертификаты соответствия, необходимые аттестации, разрешения на работу и эксплуатацию 
-              strong по требованиям ППБ и ТК РФ.
-          li.service-advantages__item 
-            h3 СДЕЛАЙТЕ ЗАКАЗ 
-              span ПРЯМО СЕЙЧАС!
-            form.service-advantages__form.flex
-              input(type='text' placeholder='Имя')
-              input(type='tel' placeholder='Телефон')
-              button.button Отправить
-            img(src='images/2-cars.jpg' alt='')
+      section.section.section--service-advantages#benefits
+        .container
+          h2.section__title
+            span ПРЕИМУЩЕСТВА 
+            |НАШЕГО СЕРВИСА
+          
+          ul.service-advantages__list
+            li.service-advantages__item 
+              h3 УДОБСТВО НА КАЖДОМ ЭТАПЕ 
+              p Вы получаете 
+                strong комплекс услуг 
+                |от квалифицированных специалистов. У вас 
+                strong нет необходимости тратить время и деньги 
+                |на обучение своих людей. 
+              p После окончания проекта (работ) не возникает вопрос о продаже ненужного оборудования или увольнении избыточного персонала.
+            li.service-advantages__item 
+              h3 ОПЕРАТИВНОСТЬ
+              p Аренда - это 
+                strong минимум времени от запроса оборудования до его получения. 
+                |При поломке техники или неявки персонала, вы оперативно получаете замену. 
+              p 
+                strong Работа идет без остановок 
+                |на отпуска и больничные. Один поставщик услуг способен удовлетворить нужды разных этапов строительства.
+            li.service-advantages__item 
+              h3 ЭКОНОМИЯ И КАЧЕСТВО
+              p 
+                strong Не нужны крупные затраты 
+                |на покупку оборудования, его хранение, обслуживание, ремонт, бухгалтерский учет  и утилизацию. 
+                strong Идет экономия на налогах. 
+              p У вас есть четкая картина затрат по технике, чтобы точно рассчитать бюджет проекта и контролировать расходы.
+              p Арендуемое оборудование и персонал имеет сертификаты соответствия, необходимые аттестации, разрешения на работу и эксплуатацию 
+                strong по требованиям ППБ и ТК РФ.
+            li.service-advantages__item 
+              h3.section__title СДЕЛАЙТЕ ЗАКАЗ 
+                span ПРЯМО СЕЙЧАС!
+              form.service-advantages-form
+                .service-advantages-form__fields
+                  input.service-advantages-form__input.input(type='text' placeholder='Имя')
+                  input.service-advantages-form__input.input(type='tel' placeholder='Телефон')
+                button.service-advantages-form__button.button.button--green Отправить
+                .service-advantages-form__image
+                  img.img.img--responsive(src='images/2-cars.jpg' alt='')
           
     include inc/footer.pug
             
