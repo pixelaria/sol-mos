@@ -10,24 +10,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top flex j-c__s-b container p-s__85">
-        <div class="header__top_left-side flex a-i__c">
-          <p>9:00-18:00 без выходных</p><a href="mailto:info@sol-mos.ru">info@sol-mos.ru</a>
-        </div>
-        <div class="header__top_right-side"><a class="button" href="mailto:info@sol-mos.ru">ОСТАВИТЬ ЗАЯВКУ</a></div>
-      </div>
-      <div class="header__main container flex j-c__s-b a-i__c p-s__85">
-        <div class="header__main_left flex a-i__c">
-          <div class="header__main_logotype"><img src="images/logotype.jpg" alt="logotype"></div>
-          <nav class="header__main_nav">
-            <ul class="header__main_menu-list flex a-i__c">
-              <li class="header__main_menu-item flex a-i__c"><a class="b-line scroll-to-target" href="#special">Спецпредложения</a></li>
-              <li class="header__main_menu-item flex a-i__c"><a class="b-line scroll-to-target" href="#areas">Направления работы</a></li>
-              <li class="header__main_menu-item flex a-i__c"><a class="b-line scroll-to-target" href="#benefits">Преимущества</a></li>
+      <div class="header__main">
+        <div class="container header__container">
+          <div class="header__part header__part--logo"><img class="logo" src="images/logotype.jpg" alt="logotype"></div>
+          <div class="header__part header__part--phone"><a class="header__phone" href="tel:+79035395352"><span>+7 903 539 53 52</span></a></div>
+          <nav class="header__part header__part--menu">
+            <ul class="nav" id="nav">
+              <li class="nav__item"><a class="nav__link scroll-to-target" href="#special">Спецпредложения</a></li>
+              <li class="nav__item"><a class="nav__link scroll-to-target" href="#areas">Направления работы</a></li>
+              <li class="nav__item"><a class="nav__link scroll-to-target" href="#benefits">Преимущества</a></li>
             </ul>
+            <div class="nav-toggler" data-target="#nav"></div>
           </nav>
         </div>
-        <div class="header__main_right"> <a class="header__main_tel" href="tel:+79035395352"> <span>+7 903 </span>539 53 52</a></div>
       </div>
     </header>
     <main class="main">
@@ -168,17 +163,17 @@
           <h2 class="section__title"><span>ПРЕИМУЩЕСТВА </span>НАШЕГО СЕРВИСА</h2>
           <ul class="service-advantages__list">
             <li class="service-advantages__item"> 
-              <h3>УДОБСТВО НА КАЖДОМ ЭТАПЕ </h3>
+              <h3 class="service-advantages__title">УДОБСТВО НА КАЖДОМ ЭТАПЕ </h3>
               <p>Вы получаете <strong>комплекс услуг </strong>от квалифицированных специалистов. У вас <strong>нет необходимости тратить время и деньги </strong>на обучение своих людей. </p>
               <p>После окончания проекта (работ) не возникает вопрос о продаже ненужного оборудования или увольнении избыточного персонала.</p>
             </li>
             <li class="service-advantages__item"> 
-              <h3>ОПЕРАТИВНОСТЬ</h3>
+              <h3 class="service-advantages__title">ОПЕРАТИВНОСТЬ</h3>
               <p>Аренда - это <strong>минимум времени от запроса оборудования до его получения. </strong>При поломке техники или неявки персонала, вы оперативно получаете замену. </p>
               <p> <strong>Работа идет без остановок </strong>на отпуска и больничные. Один поставщик услуг способен удовлетворить нужды разных этапов строительства.</p>
             </li>
             <li class="service-advantages__item"> 
-              <h3>ЭКОНОМИЯ И КАЧЕСТВО</h3>
+              <h3 class="service-advantages__title">ЭКОНОМИЯ И КАЧЕСТВО</h3>
               <p> <strong>Не нужны крупные затраты </strong>на покупку оборудования, его хранение, обслуживание, ремонт, бухгалтерский учет  и утилизацию. <strong>Идет экономия на налогах. </strong></p>
               <p>У вас есть четкая картина затрат по технике, чтобы точно рассчитать бюджет проекта и контролировать расходы.</p>
               <p>Арендуемое оборудование и персонал имеет сертификаты соответствия, необходимые аттестации, разрешения на работу и эксплуатацию <strong>по требованиям ППБ и ТК РФ.</strong></p>
@@ -198,28 +193,31 @@
         </div>
       </section>
     </main>
-    <footer class="footer container p-s__85 flex j-c__s-b f-w__w">
-      <div class="footer__left-side flex">
-        <ul class="footer__list">
-          <li class="footer__item"> <a href="#">Аренда оборудования</a></li>
-          <li class="footer__item"> <a href="#">Продажа оборудования</a></li>
-          <li class="footer__item"> <a href="#">Услуги</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item"> <a href="#">Контакты и реквизиты</a></li>
-          <li class="footer__item"> <a href="#">О компании</a></li>
-          <li class="footer__item"> <a href="#">Политика конфиденциальности</a></li>
-        </ul>
-      </div>
-      <div class="footer__right-side"> 
-        <ul class="footer__list">
-          <li class="footer__item item--tel"> <a href="tel:+79035395352">+7 903 539 53 52</a></li>
-          <li class="footer__item"> <span>СПБ, Дворцовая пл., д. 12, офис 314</span></li>
-          <li class="footer__item"> <a href="mailto:info@sol-mos.ru">info@sol-mos.ru</a></li>
-        </ul>
-      </div>
-      <div class="footer__bottom flex j-c__s-b"> 
-        <p>2019 г. Копирование материалов сайта только с письменного разрешения владельца </p><a class="pixelaria" href="#">Разработано в <span>Pixelaria</span></a>
+    <footer class="section section--footer footer">
+      <div class="container">
+        <div class="footer__parts">
+          <div class="footer__part">
+            <ul class="footer__list footer-list">
+              <li class="footer-list__item"> <a class="footer-list__link" href="#">Аренда оборудования</a></li>
+              <li class="footer-list__item"> <a href="#">Продажа оборудования</a></li>
+              <li class="footer-list__item"> <a href="#">Услуги</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer-list__item"> <a href="#">Контакты и реквизиты</a></li>
+              <li class="footer-list__item"> <a href="#">О компании</a></li>
+              <li class="footer-list__item"> <a href="#">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div class="footer__part">
+            <div class="contacts"><a class="contacts__phone" href="tel:+79035395352">+7 903 539 53 52</a>
+              <div class="contacts__address">СПБ, Дворцовая пл., д. 12, офис 314</div><a class="contacts__email" href="mailto:info@sol-mos.ru">info@sol-mos.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright copyright">
+          <div class="copyright__text">2019 г. Копирование материалов сайта только с письменного разрешения владельца </div>
+          <div class="copyright__develop">Разработано в <a href="http://pixelaria.ru" target="_blank" class="link link--green link--bold">Pixelaria</a></div>
+        </div>
       </div>
     </footer>
     <script src="js/app.min.js"></script>

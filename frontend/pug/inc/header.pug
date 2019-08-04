@@ -1,23 +1,23 @@
 header.header
-  .header__top.flex.j-c__s-b.container.p-s__85
-    .header__top_left-side.flex.a-i__c
-      p 9:00-18:00 без выходных
-      a(href="mailto:info@sol-mos.ru") info@sol-mos.ru
-    .header__top_right-side
-      a.button(href="mailto:info@sol-mos.ru") ОСТАВИТЬ ЗАЯВКУ
-  .header__main.container.flex.j-c__s-b.a-i__c.p-s__85
-    .header__main_left.flex.a-i__c
-      .header__main_logotype
-        img(src='images/logotype.jpg' alt='logotype')
-      nav.header__main_nav
-        ul.header__main_menu-list.flex.a-i__c
-          li.header__main_menu-item.flex.a-i__c
-            a(href='#special').b-line.scroll-to-target Спецпредложения
-          li.header__main_menu-item.flex.a-i__c
-            a(href='#areas').b-line.scroll-to-target Направления работы
-          li.header__main_menu-item.flex.a-i__c
-            a(href='#benefits').b-line.scroll-to-target Преимущества
-    .header__main_right 
-      a(href='tel:+79035395352').header__main_tel 
-        span +7 903 
-        |539 53 52
+  .header__main
+    .container.header__container
+      .header__part.header__part--logo
+        img.logo(src='images/logotype.jpg' alt='logotype')
+      .header__part.header__part--phone
+        a(href='tel:+79035395352').header__phone
+          span +7 903 539 53 52
+      nav.header__part.header__part--menu
+        ul.nav#nav
+          li.nav__item
+            a(href='#special').nav__link.scroll-to-target Спецпредложения
+          li.nav__item
+            a(href='#areas').nav__link.scroll-to-target Направления работы
+          li.nav__item
+            a(href='#benefits').nav__link.scroll-to-target Преимущества
+        .nav-toggler(data-target="#nav")
+
+      
+
+
+    
+
