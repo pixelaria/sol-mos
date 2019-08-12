@@ -10,9 +10,19 @@
   &__list
     position relative
     z-index 1
+    
+    +md-min()
+      display flex
+      justify-content space-between
+      
   &__item
     display block
     
+    +md-min()
+      width 30%
+      min-width 30%
+      
+      
     &:before
       content ''
       width 100%

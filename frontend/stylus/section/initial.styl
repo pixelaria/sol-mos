@@ -1,21 +1,74 @@
 .section
   &--initial
-    padding-top 180px
-    padding-bottom 235px
-    background-image url('../images/initial-screen.png')
+    background-image linear-gradient(0,rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+                     url(../images/initial-screen.jpg) 
     background-repeat no-repeat
     background-size cover
+    background-position center
     position relative
-    
-    &:before
-      content ''
-      background url('../images/initial-mask.jpg')
+    z-index 1
+
+.lines
+  overflow hidden
+  &__item
+    &:before,&:after
+      content ""
       position absolute
-      z-index -1
-      top 0
-      bottom 0
       left 0
-      right 0
+      z-index 1
+      width 100%
+      
+    &:before
+      -ms-transform: skewY(-5deg);
+      transform: skewY(-5deg);
+    
+    &:after
+      -ms-transform: skewY(5deg);
+      transform: skewY(5deg);
+      
+      
+    &--white
+      &:before,&:after
+        height 100px
+        bottom -120px
+        
+        background-color #ffffff
+        z-index 3
+    
+      &:before
+        -ms-transform: skewY(-11deg);
+        transform: skewY(-11deg);
+        +lg-min()
+          right -40%
+          bottom -75px
+          height 150px
+          -ms-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+      &:after
+        -ms-transform: skewY(11deg);
+        transform: skewY(11deg);
+        
+        +lg-min()
+          left -40%
+          bottom -75px
+          height 150px
+    &--green
+      &:before,&:after
+        height 30px
+        bottom -30px
+        background-color #3fc6d2
+        z-index 2
+      &:before
+        +lg-min()
+          right -40%
+          bottom -75px
+          height 150px
+          -ms-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+          
+      &:after
+        +lg-min()
+          content none
     
 .page
   color #ffffff
@@ -23,25 +76,41 @@
   text-align left
   max-width 450px
   margin auto
-  
+  +lg-min()
+    max-width 860px
+    text-align center
   &__over
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size 14px
+    font-weight 400
+    line-height 24px
     text-transform uppercase
     margin-bottom 10px
+    
+    +lg-min()
+      font-size 24px
+      font-weight 400
+      margin-bottom 22px
+    
     
   &__title
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
+    font-size 32px
+    font-weight 700
+    line-height 40px
     text-transform uppercase
-    
     margin-bottom 10px
+    
+    +lg-min()
+      font-size 48px
+      font-weight 700
+      line-height 48px
+      margin-bottom 20px
   
   &__text
     font-size 18px
     font-weight 400
     line-height 30px
     
-    
+    +lg-min()
+      font-size 18px
+      font-weight 400
+      line-height 30px

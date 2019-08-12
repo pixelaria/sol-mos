@@ -10,23 +10,73 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__part header__part--info header-info">
+            <p class="header-info__part">9:00-18:00 без выходных</p><a class="header-info__part link link--white" href="mailto:info@sol-mos.ru">info@sol-mos.ru</a>
+            <form class="header-info__part search">
+              <input class="search__input" type="text" placeholder="Поиск оборудования" name="search">
+            </form>
+          </div>
+          <div class="header__part header__part--popup">
+            <button class="button button--popup">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
       <div class="header__main">
         <div class="container header__container">
           <div class="header__part header__part--logo"><img class="logo" src="images/logotype.jpg" alt="logotype"></div>
-          <div class="header__part header__part--phone"><a class="header__phone" href="tel:+79035395352"><span>+7 903 539 53 52</span></a></div>
-          <nav class="header__part header__part--menu">
-            <ul class="nav" id="nav">
-              <li class="nav__item"><a class="nav__link scroll-to-target" href="#special">Спецпредложения</a></li>
-              <li class="nav__item"><a class="nav__link scroll-to-target" href="#areas">Направления работы</a></li>
-              <li class="nav__item"><a class="nav__link scroll-to-target" href="#benefits">Преимущества</a></li>
+          <div class="header__part header__part--phone"><a class="header__phone" href="tel:+79035395352"><span>+7 903 </span>539 53 52</a></div>
+          <nav class="header__part header__part--men nav">
+            <ul class="nav__list" id="nav">
+              <li class="nav__item nav__item--parent"><a class="nav__link link" href="#">Оборудование в аренду</a>
+                <div class="nav__toggler"></div>
+                <ul class="nav__sublist">
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent"><a class="nav__link link" href="#">Продажа оборудования</a>
+                <div class="nav__toggler"></div>
+                <ul class="nav__sublist">
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent"><a class="nav__link link" href="#">Услуги</a>
+                <div class="nav__toggler"></div>
+                <ul class="nav__sublist">
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item--parent"><a class="nav__link link" href="#">О компании</a>
+                <div class="nav__toggler"></div>
+                <ul class="nav__sublist">
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                  <li class="nav__item"><a class="nav__link">Подпункт</a></li>
+                </ul>
+              </li>
             </ul>
-            <div class="nav-toggler" data-target="#nav"></div>
           </nav>
+          <div class="navbar-toggler" data-target="#nav"><span class="navbar-toggler__bar"></span><span class="navbar-toggler__bar"></span><span class="navbar-toggler__bar"></span></div>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="section section--initial">
+        <div class="lines">
+          <div class="lines__item lines__item--white"></div>
+          <div class="lines__item lines__item--green"></div>
+        </div>
         <div class="container">
           <div class="page">
             <p class="page__over">НАДЕЖНЫЙ ПАРТНЕР С 10-ЛЕТНИМ ОПЫТОМ РАБОТЫ</p>
@@ -196,13 +246,13 @@
     <footer class="section section--footer footer">
       <div class="container">
         <div class="footer__parts">
-          <div class="footer__part">
+          <div class="footer__part footer__part--menu">
             <ul class="footer__list footer-list">
               <li class="footer-list__item"> <a class="footer-list__link" href="#">Аренда оборудования</a></li>
               <li class="footer-list__item"> <a href="#">Продажа оборудования</a></li>
               <li class="footer-list__item"> <a href="#">Услуги</a></li>
             </ul>
-            <ul class="footer__list">
+            <ul class="footer__list footer-list">
               <li class="footer-list__item"> <a href="#">Контакты и реквизиты</a></li>
               <li class="footer-list__item"> <a href="#">О компании</a></li>
               <li class="footer-list__item"> <a href="#">Политика конфиденциальности</a></li>

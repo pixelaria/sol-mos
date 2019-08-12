@@ -1,22 +1,39 @@
 header.header
+  .header__top
+    .container
+      .header__part.header__part--info.header-info
+        p.header-info__part 9:00-18:00 без выходных
+        a.header-info__part.link.link--white(href="mailto:info@sol-mos.ru") info@sol-mos.ru
+        form.header-info__part.search
+          input.search__input(type='text' placeholder='Поиск оборудования' name='search')
+      .header__part.header__part--popup
+        button.button.button--popup Оставить заявку
   .header__main
     .container.header__container
       .header__part.header__part--logo
         img.logo(src='images/logotype.jpg' alt='logotype')
       .header__part.header__part--phone
         a(href='tel:+79035395352').header__phone
-          span +7 903 539 53 52
-      nav.header__part.header__part--menu
-        ul.nav#nav
-          li.nav__item
-            a(href='#special').nav__link.scroll-to-target Спецпредложения
-          li.nav__item
-            a(href='#areas').nav__link.scroll-to-target Направления работы
-          li.nav__item
-            a(href='#benefits').nav__link.scroll-to-target Преимущества
-        .nav-toggler(data-target="#nav")
+          span +7 903 
+          | 539 53 52
+      nav.header__part.header__part--men.nav
+        ul.nav__list#nav
+          each val, index in ['Оборудование в аренду', 'Продажа оборудования', 'Услуги', 'О компании']
+            li.nav__item.nav__item--parent
+              a.nav__link.link(href="#") #{val}
+              .nav__toggler
+              ul.nav__sublist
+                - var n = 0;
+                while n < 4
+                  - n++
+                  li.nav__item
+                    a.nav__link Подпункт
+      .navbar-toggler(data-target="#nav")
+        span.navbar-toggler__bar
+        span.navbar-toggler__bar
+        span.navbar-toggler__bar
 
-      
+  
 
 
     

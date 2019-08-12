@@ -9,17 +9,34 @@
   
   &__parts
     display block
+    
+    +lg-min()
+      display flex
+      justify-content space-between
+      flex-wrap nowrap
+      
   &__part
     display block
     margin-bottom 16px
     
+    &--menu
+      +lg-min()
+        display flex
+        justify-content space-between
+        flex-wrap nowrap
+   
+    
 .footer-list
-  &__list
+  +lg-min()
     &:not(:last-child)
       margin-right 50px
+    
   &__item
     text-align center
     margin-bottom 8px
+    +lg-min()
+      text-align left
+      
     a
       color #ffffff
       font-size 14px
@@ -41,9 +58,14 @@
     
 .copyright
   text-align center
+  +lg-min()
+    display flex
+    justify-content space-between
   &__text
     color #787878
     margin-bottom 8px
+    +lg-min()
+      margin-bottom 0
       
   &__develop
     color #787878
