@@ -1,0 +1,104 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title main page sol mos
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page
+            ul.page__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item 
+                | Аренда оборудования
+            h1.page__title 
+              | Аренда оборудования
+      section.section--rent
+        .container
+          .categories
+            ul.categories__list
+              .categories__item
+                .catagories__img
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .categories__title Строительные подъемники
+              .categories__item
+                .catagories__img
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .categories__title Автомобильные краны
+              .categories__item
+                .catagories__img
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .categories__title Строительные подъемники
+              .categories__item
+                .catagories__img
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .categories__title Строительные подъемники
+              .categories__item
+                .catagories__img
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .categories__title Строительные подъемники
+      section.section.section--listing
+        .container
+          .toolbar
+            .toolbar__search.search
+              input.search__input(placeholder="Поиск...")
+            .toolbar__sort.sort
+              p.sort__title Сортировать по:
+              ul.sort__items
+                li.sort__item.sort__item--asc.sort__item--active названию
+                li.sort__item.sort__item--asc цене
+                li.sort__item.sort__item--asc популярности
+          .content
+            .content__sidebar.sidebar
+              nav.sidemenu
+                ul.sidemenu__list
+                  li.sidemenu__item
+                    a.sidemenu__link(href="#") Строительные подъемники
+                  li.sidemenu__item
+                    a.sidemenu__link(href="#") Подъемные вышки
+                  li.sidemenu__item
+                    a.sidemenu__link(href="#") Автомобильные краны
+                  li.sidemenu__item
+                    a.sidemenu__link(href="#") Башенные краны
+                  li.sidemenu__item
+                    a.sidemenu__link(href="#") Электроснабжение
+              .sale
+                .sale__image
+                  img.img.img--respomsive(src="https://via.placeholder.com/300")
+                .sale__title Специальное предложение
+                .sale__desc Текст специального предложения или актуальной акции!
+            .content__main.listing
+              .listing__products.products
+                .products__item.products-item
+                  .products-item__image
+                    img.img.img--respomsive(src="https://via.placeholder.com/300")
+                  .products-item__desc
+                    .products-item__title ALIMAK SCANDO 650 32/39 TWIN (ДВУХ КАБИННЫЙ)
+                    ul.products-item__params
+                      li.products-item__param Грузоподъемность: 3,2 т
+                      li.products-item__param Кабина: 1500 x 3900 x 2600 мм
+                      li.products-item__param Высота подъёма: до 250м
+                      li.products-item__param 380-500 В, 50 или 60 Гц, 3 фазы
+      section.section.section--advantages
+        .container
+          ul.advantages__list
+            li.advantages__item.advantage
+              h6.advantage__title ДОРОЖИМ РЕПУТАЦИЕЙ
+              p.advantage__text
+                b Более 10 лет 
+                |успешно работаем на рынке и бережно относимся к своей репутации
+            li.advantages__item.advantage
+              h6.advantage__title ДЕРЖИМ НИЗКИЕ ЦЕНЫ
+              p.advantage__text Наши цены на строительную технику 
+                b выгодно отличаются 
+                |от конкурентов
+            li.advantages__item.advantage
+              h6.advantage__title ЦЕНИМ ВСЕХ КЛИЕНТОВ
+              p.advantage__text Каждый клиент для нас исключительный и мы 
+                b всегда готовы пойти на встречу
+      
+    include inc/footer.pug
+            
