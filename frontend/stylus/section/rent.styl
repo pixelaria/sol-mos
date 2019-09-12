@@ -1,0 +1,142 @@
+.section
+  &--page 
+    padding-bottom 15px
+    
+.categories
+  &__list 
+    display block
+  &__item
+    display flex
+    justify-content flex-start
+    align-items center
+    margin-bottom 10px
+    color #444444
+    
+  &__img
+    display block
+    position relative
+    width 64px
+    min-width 64px
+    margin-right 18px
+    
+    img 
+    
+      width 100%
+      height auto
+  &__title
+    font-size 16px
+    font-weight 400
+    line-height 28px
+  
+.sidebar
+  display none
+  +md-min()
+    display block
+    width 30%
+    min-width 30%
+    margin-right 40px
+  
+.toolbar 
+  display block
+  &__search
+    display block
+    
+    
+  &__sort
+    background-color #fafafa
+    
+.side-search
+  &__input 
+    width 100%
+    height 50px
+    line-height 50px
+    background-image linear-gradient(to right, #3fc6d2 0%, #3aabc9 100%)
+    padding 15px
+    color #ffffff
+.sort
+  &__title
+    display none
+  &__items
+    display flex
+    justify-content flex-start
+    align-items center
+    height 50px
+    padding 15px
+    
+  &__item
+    color #999999
+    margin-right 7px
+    cursor pointer
+    
+    &:last-child 
+      margin-right 0
+
+    &--active
+      color #3abdc9
+      
+    &--asc
+      display block
+    &--desc
+      display block
+    
+        
+    
+.listing
+  display block
+  margin 0 -15px 
+  
+  &__products
+    display block
+  
+.products
+  +md-min()
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    
+  &__item
+    display flex
+    justify-content flex-start
+    align-items center
+    margin-bottom 10px
+    background-color #ffffff
+    
+    +md-min()
+      width 32%
+      display block
+
+.products-item
+  cursor pointer
+  
+  +md-min()
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  &__image
+    width 120px
+    +md-min()
+      width 100%
+    
+  &__desc
+    padding 15px
+  &__title
+    color #444444
+    font-size 12px
+    font-weight 700
+    line-height 16px
+    text-transform uppercase
+    margin-bottom 4px
+    
+    +md-min()
+      font-size 14px
+      line-height 22px
+  
+  &__params
+    color #444444
+    font-size 10px
+    font-weight 400
+    line-height 12px
+    
+    +md-min()
+      font-size 14px
+      font-weight 400
+      line-height 22px
+    

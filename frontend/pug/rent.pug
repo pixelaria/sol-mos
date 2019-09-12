@@ -15,36 +15,37 @@ html(lang='ru')
               li.breadcrumbs__item 
                 | Аренда оборудования
             h1.page__title 
-              | Аренда оборудования
+              | Аренда 
+              span оборудования
       section.section--rent
         .container
           .categories
-            ul.categories__list
-              .categories__item
-                .catagories__img
+            .categories__list
+              a.categories__item(href="#")
+                .categories__img
                   img.img.img--respomsive(src="https://via.placeholder.com/300")
                 .categories__title Строительные подъемники
-              .categories__item
-                .catagories__img
+              a.categories__item(href="#")
+                .categories__img
                   img.img.img--respomsive(src="https://via.placeholder.com/300")
                 .categories__title Автомобильные краны
-              .categories__item
-                .catagories__img
+              a.categories__item(href="#")
+                .categories__img
                   img.img.img--respomsive(src="https://via.placeholder.com/300")
                 .categories__title Строительные подъемники
-              .categories__item
-                .catagories__img
+              a.categories__item(href="#")
+                .categories__img
                   img.img.img--respomsive(src="https://via.placeholder.com/300")
                 .categories__title Строительные подъемники
-              .categories__item
-                .catagories__img
+              a.categories__item(href="#")
+                .categories__img
                   img.img.img--respomsive(src="https://via.placeholder.com/300")
                 .categories__title Строительные подъемники
       section.section.section--listing
         .container
           .toolbar
-            .toolbar__search.search
-              input.search__input(placeholder="Поиск...")
+            .toolbar__search.side-search
+              input.side-search__input(placeholder="Поиск...")
             .toolbar__sort.sort
               p.sort__title Сортировать по:
               ul.sort__items
@@ -72,7 +73,27 @@ html(lang='ru')
                 .sale__desc Текст специального предложения или актуальной акции!
             .content__main.listing
               .listing__products.products
-                .products__item.products-item
+                a.products__item.products-item(href="#")
+                  .products-item__image
+                    img.img.img--respomsive(src="https://via.placeholder.com/300")
+                  .products-item__desc
+                    .products-item__title ALIMAK SCANDO 650 32/39 TWIN (ДВУХ КАБИННЫЙ)
+                    ul.products-item__params
+                      li.products-item__param Грузоподъемность: 3,2 т
+                      li.products-item__param Кабина: 1500 x 3900 x 2600 мм
+                      li.products-item__param Высота подъёма: до 250м
+                      li.products-item__param 380-500 В, 50 или 60 Гц, 3 фазы
+                a.products__item.products-item(href="#")
+                  .products-item__image
+                    img.img.img--respomsive(src="https://via.placeholder.com/300")
+                  .products-item__desc
+                    .products-item__title ALIMAK SCANDO 650 32/39 TWIN (ДВУХ КАБИННЫЙ)
+                    ul.products-item__params
+                      li.products-item__param Грузоподъемность: 3,2 т
+                      li.products-item__param Кабина: 1500 x 3900 x 2600 мм
+                      li.products-item__param Высота подъёма: до 250м
+                      li.products-item__param 380-500 В, 50 или 60 Гц, 3 фазы
+                a.products__item.products-item(href="#")
                   .products-item__image
                     img.img.img--respomsive(src="https://via.placeholder.com/300")
                   .products-item__desc
