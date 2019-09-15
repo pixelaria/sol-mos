@@ -15,8 +15,11 @@
 
 .section--advantages
   background-color #fafafa
-  margin-top 75px
+  margin-top 0
+  position relative
   
+  +md-min()
+    margin-top 75px
   
     
   .container
@@ -27,7 +30,7 @@
     left 0
     width 100%
     height 100px
-    bottom -120px
+    top 0px
     background-color #fafafa
     z-index 0s
     
