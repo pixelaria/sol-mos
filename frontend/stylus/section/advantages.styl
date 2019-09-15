@@ -10,9 +10,54 @@
     
     .container
       z-index 2
-      background-color #ffffff
+      background-color #fafafa
       position relative
+
+.section--advantages
+  background-color #fafafa
+  margin-top 75px
+  
+  
     
+  .container
+    z-index 1
+  &:before,&:after
+    content ""
+    position absolute
+    left 0
+    width 100%
+    height 100px
+    bottom -120px
+    background-color #fafafa
+    z-index 0s
+    
+  &:before
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+  
+  &:after
+    -ms-transform: skewY(5deg);
+    transform: skewY(5deg);
+  
+  &:before
+    -ms-transform: skewY(-11deg);
+    transform: skewY(-11deg);
+    +lg-min()
+      right -40%
+      top -75px
+      height 150px
+      -ms-transform: skewY(-4deg);
+      transform: skewY(-4deg);
+  &:after
+    -ms-transform: skewY(11deg);
+    transform: skewY(11deg);
+    +lg-min()
+      left -40%
+      top -75px
+      height 150px
+
+.section--nomt
+  margin-top 0
 
 .advantages
   &__list
@@ -38,7 +83,8 @@
   padding-top 30px
   padding-bottom 30px
   position relative
-  
+  background-color #fafafa
+
   &:last-child
     margin-bottom 0
     

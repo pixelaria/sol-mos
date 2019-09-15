@@ -78,7 +78,6 @@
   margin-top 0
 
   +md-min()
-    border-top 1px solid #d8d8d8
     padding-top 20px
 
   &__item 
@@ -89,6 +88,8 @@
     margin-right 5px
     padding-right 20px
     color #999999
+    +md-min()
+      font-size 14px
     
     &:after 
       content '/'
@@ -104,10 +105,12 @@
         content none
   
   &__link 
-    text-decoration: underline;
+    color #999999
+    text-decoration underline
+    +md-min()
+      font-size 14px
 
-
-.page 
+.page-start
   &__title
     color: #444444
     font-family: "Circe Bold - Bold"
