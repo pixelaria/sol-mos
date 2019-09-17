@@ -22,7 +22,7 @@ html(lang='ru')
                 | ALIMAK SCANDO 650 
             h1.page-start__title 
               | ГРУЗОВОЙ ПОДЪЁМНИК ALIMAK SCANDO 650 32/39 
-      section.section.section--listing
+      section.section.section--product
         .container
           .content
             .content__sidebar.sidebar
@@ -30,6 +30,15 @@ html(lang='ru')
                 ul.sidemenu__list
                   li.sidemenu__item
                     a.sidemenu__link.sidemenu__link--1(href="#") Строительные подъемники
+                    ul.sidemenu__submenu
+                      li.sidemenu__submenu-item
+                        a.sidemenu__submenu-link.sidemenu__submenu-link--active(href="#") ГРУЗОВЫЕ ПОДЪЕМНИКИ
+                      li.sidemenu__submenu-item
+                        a.sidemenu__submenu-link(href="#") ГРУЗОПАССАЖИРСКИЕ
+                      li.sidemenu__submenu-item
+                        a.sidemenu__submenu-link(href="#") ФАСАДНЫЕ ПЛАТФОРМЫ
+                      li.sidemenu__submenu-item
+                        a.sidemenu__submenu-link(href="#") ФАСАДНЫЕ ЛЮЛЬКИ
                   li.sidemenu__item
                     a.sidemenu__link.sidemenu__link--2(href="#") Подъемные вышки
                   li.sidemenu__item
@@ -40,16 +49,25 @@ html(lang='ru')
                     a.sidemenu__link.sidemenu__link--5(href="#") Электроснабжение
             .content__main.product
               .product__slider
+                img.img.img--responsive.product__image(src="./images/product-img-1.png")
               .product__desc
                 .product__title ГРУЗОВОЙ ПОДЪЁМНИК ALIMAK SCANDO 650 32/39
                 ul.product__info
                   li.product__info-item Артикул: 1211-01
                   li.product__info-item Производитель: Alimak Scando
                 ul.product__params
-                    li.products__param Грузоподъемность: 3,2 т
-                    li.products__param Кабина: 1500 x 3900 x 2600 мм
-                    li.products__param Высота подъёма: до 250м
-                    li.products__param 380-500 В, 50 или 60 Гц, 3 фазы
+                    li.product__param 
+                      span.product__param-title Грузоподъемность: 
+                      span.product__param-value 3,2 т
+                    li.product__param 
+                      span.product__param-title Кабина: 
+                      span.product__param-value 1500 x 3900 x 2600 мм
+                    li.product__param 
+                      span.product__param-title Высота подъёма: 
+                      span.product__param-value до 250м
+                    li.product__param 
+                      span.product__param-title Энергопотребление 
+                      span.product__param-value 380-500 В, 50 или 60 Гц, 3 фазы
                 .product__buy
                   .product__price Цена по запросу
                   button.product__btn Заказать
@@ -57,27 +75,7 @@ html(lang='ru')
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
               .product__files.files
                 .files__item
-                  .files__title | Скачать техническую документацию к оборудованию
-                  .files__btn
-
-
-      section.section.section--advantages
-        .container
-          ul.advantages__list
-            li.advantages__item.advantage
-              h6.advantage__title ДОРОЖИМ РЕПУТАЦИЕЙ
-              p.advantage__text
-                b Более 10 лет 
-                |успешно работаем на рынке и бережно относимся к своей репутации
-            li.advantages__item.advantage
-              h6.advantage__title ДЕРЖИМ НИЗКИЕ ЦЕНЫ
-              p.advantage__text Наши цены на строительную технику 
-                b выгодно отличаются 
-                |от конкурентов
-            li.advantages__item.advantage
-              h6.advantage__title ЦЕНИМ ВСЕХ КЛИЕНТОВ
-              p.advantage__text Каждый клиент для нас исключительный и мы 
-                b всегда готовы пойти на встречу
-      
+                  a.files__title(href="#") Скачать техническую документацию к оборудованию
+                  a.files__btn(href="#")
     include inc/footer.pug
-            
+    

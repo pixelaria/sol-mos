@@ -198,7 +198,7 @@
     display block
   &__item
     display block
-    border-top 1px solid #999999
+    border-top 1px solid rgba(153,153,153,0.2)
     
 
     
@@ -241,10 +241,27 @@
     &--5
       &:before
         background-image url('../images/cat-5.png')
+  &__submenu
+    padding-left 30px
+    margin-bottom 15px
+  &__submenu-item
+    margin-bottom 10px
+  &__submenu-link
+    color #444444
+    font-size 16px
+    font-weight 400
+    line-height 28px
+    padding 15px 0
+        
+    &--active
+      font-weight 700
+    
 .sale
   background-color #fafafa
+  
   &__image
     display block
+  
   &__title
     color #3abdc9
     font-size 18px
