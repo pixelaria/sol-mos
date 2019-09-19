@@ -1,0 +1,43 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title main page sol mos
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page-start
+            ul.page-start__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item 
+                | Наши услуги
+            h1.page-start__title 
+              | Наши 
+              span Услуги
+      section.section.section--services
+        .container
+          .services
+            a.services__item.services__item--drive
+              span УПРАВЛЕНИЕ 
+              | ГРУЗОПОДЪЕМНЫМИ МАШИНАМИ И МЕХАНИЗМАМИ
+            a.services__item.services__item--repair
+              span ДИАГНОСТИКА, РЕМОНТ 
+              | РАБОТЫ ПО СОДЕРЖАНИЮ ОБОРУДОВАНИЯ 
+            a.services__item.services__item--craft
+              span ПРОИЗВОДСТВО 
+              | СТРОИТЕЛЬНЫХ РАБОТ ЛЮБОЙ СЛОЖНОСТИ
+            a.services__item.services__item--other
+              span ДРУГИЕ УСЛУГИ 
+              | СОПРОВОЖДАЮЩИЕ СТРОИТЕЛЬНЫЙ ПРОЦЕСС 
+      section.section.section--service
+        .container
+          h1.section__title
+            span УПРАВЛЕНИЕ 
+            | ГРУЗОПОДЪЕМНЫМИ МАШИНАМИ И МЕХАНИЗМАМИ
+          p.blockquote Предоставляем операторов на следующее оборудование:  
+
+    include inc/footer.pug
+    

@@ -95,7 +95,7 @@ gulp.task('stylus', function(){
 	return gulp.src('frontend/stylus/*.styl','frontend/stylus/*/*.styl')
 	// .pipe(sourcemaps.init())
 	.pipe(stylus())
-	.pipe(shorthand())
+	//.pipe(shorthand())
 	.pipe(gulp.src('frontend/assets/css/*.css'))
 	.pipe(concat('style.css'))
 	.pipe(csscomb())

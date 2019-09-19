@@ -1,0 +1,154 @@
+.section--product
+  padding-top 15px
+  
+.product
+  +md-min()
+    display flex
+    flex-wrap wrap
+  &__slider
+    margin-bottom 15px
+    +md-min()
+      flex-basis 50%
+      padding-rignt 15px
+      margin-bottom 0
+  &__desc
+    +md-min()
+      flex-basis 50%
+      padding-left 15px
+  &__title
+    color #3abdc9
+    font-weight 700
+    text-transform uppercase
+    margin-bottom 10px
+    
+    +md-min()
+      font-size 24px
+      line-height 30px
+      margin-bottom 15px  
+  &__info
+    display block
+    margin-bottom 15px
+    +md-min()
+      display flex
+      
+    
+    
+  &__info-item
+    color #999999
+    font-size 12px
+    +md-min()
+      margin-right 10px
+  
+  &__params
+    margin-bottom 15px
+  
+  &__param
+    display flex
+    justify-content space-between
+    align-items flex-start
+    margin-bottom 8px
+    font-size 12px
+    color #444444
+    
+    +md-min()
+      font-size 14px
+      
+    span 
+      width 50%
+      min-width 50%
+  &__param-title
+    
+    color #999999
+    margin-right 10px
+  
+  &__buy
+    margin-bottom 15px
+    +md-min()
+      display flex
+      justify-content space-between
+      align-items center
+  
+  &__price
+    color #3abdc9
+    font-size 14px
+    font-weight 700
+    margin-bottom 10px
+    +md-min()
+      font-size 16px
+  
+  &__btn
+    height 50px
+    background-color #3abdc9
+    color #ffffff
+    text-align center
+    display flex
+    align-items center
+    font-weight 400
+    text-transform uppercase
+    padding 0 30px
+    transition background-color 0.3s ease-in-out 
+    
+    &:hover 
+      background-color #3bb0cb
+  &__text
+    color #444444
+    font-weight 400
+    font-size 14px
+    line-height 22px
+    +md-min()
+      font-size 16px
+      line-height 28px
+      flex-basis 100%
+      margin-bottom 30px
+      margin-top 50px
+      
+  &__files
+    margin-bottom 15px
+    +md-min()
+      flex-basis 100%    
+
+.files
+  background-color #fafafa
+  padding 15px 20px
+  +md-min()
+    padding 25px 40px
+  &__item
+    margin-bottom 15px
+    display flex
+    align-items center
+    
+    &:last-child
+      margin-bottom 0
+    
+    +md-min()
+      &:before
+        content ''
+        display block
+        width 20px
+        height 20px
+        background-image url('../images/icon-file.png')
+        background-position center
+        background-repeat no-repeat
+        background-size contain
+        margin-right 15px
+      
+  &__title
+    color #999999
+    font-family "Circe - Regular"
+    font-size 14px
+    font-weight 400
+    
+    +md-min()
+      font-size 16px
+  &__btn
+    display block
+    border none
+    width 20px
+    height 20px
+    background-image url('../images/icon-download.png')
+    background-position center
+    background-repeat no-repeat
+    background-size contain
+    +md-min()
+      margin-left auto
+    
