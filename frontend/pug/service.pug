@@ -21,23 +21,76 @@ html(lang='ru')
         .container
           .services
             a.services__item.services__item--drive
-              span УПРАВЛЕНИЕ 
-              | ГРУЗОПОДЪЕМНЫМИ МАШИНАМИ И МЕХАНИЗМАМИ
+              .services__inner
+                  span УПРАВЛЕНИЕ 
+                  | ГРУЗОПОДЪЕМНЫМИ МАШИНАМИ И МЕХАНИЗМАМИ
+                  span.services__lines
             a.services__item.services__item--repair
-              span ДИАГНОСТИКА, РЕМОНТ 
-              | РАБОТЫ ПО СОДЕРЖАНИЮ ОБОРУДОВАНИЯ 
+              .services__inner
+                span ДИАГНОСТИКА, РЕМОНТ 
+                  | РАБОТЫ ПО СОДЕРЖАНИЮ ОБОРУДОВАНИЯ 
+                  span.services__lines
             a.services__item.services__item--craft
-              span ПРОИЗВОДСТВО 
-              | СТРОИТЕЛЬНЫХ РАБОТ ЛЮБОЙ СЛОЖНОСТИ
+              .services__inner
+                  span ПРОИЗВОДСТВО 
+                  | СТРОИТЕЛЬНЫХ РАБОТ ЛЮБОЙ СЛОЖНОСТИ
+                  span.services__lines
             a.services__item.services__item--other
-              span ДРУГИЕ УСЛУГИ 
-              | СОПРОВОЖДАЮЩИЕ СТРОИТЕЛЬНЫЙ ПРОЦЕСС 
+              .services__inner
+                  span ДРУГИЕ УСЛУГИ 
+                  | СОПРОВОЖДАЮЩИЕ СТРОИТЕЛЬНЫЙ ПРОЦЕСС
+                  span.services__lines
       section.section.section--service
         .container
           h1.section__title
             span УПРАВЛЕНИЕ 
             | ГРУЗОПОДЪЕМНЫМИ МАШИНАМИ И МЕХАНИЗМАМИ
           p.blockquote Предоставляем операторов на следующее оборудование:  
-
+          .works
+            .works__item.work
+              .work__desc
+                p.work__title Башенные краны с верхней и нижней поворотной частью 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Строительные подъемники и платформы
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Строительные подъемники и платформы 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Фронтальные и телескопические погрузчики 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Подъемники - вышки 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Гусеничные и колесные тракторы и экскаваторы 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Одно - и двухвальцовые асфальтные и грунтовые катки
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work.work--clear
+              .work__desc
+                p.work__title  На оборудовании нулевого цикла наши операторы способны работать со всем спектром навесного оборудования.
     include inc/footer.pug
     

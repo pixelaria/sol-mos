@@ -1,4 +1,8 @@
 .services
+  &__inner
+    position relative
+    overflow hidden
+    padding 45px
   &__item
     position relative
     display block
@@ -6,19 +10,10 @@
     color #444444
     font-size 24px
     font-weight 700
-    padding 45px
+    
     margin-bottom 20px
     
-    &:after 
-      content ''
-      display block
-      position absolute
-      right 0
-      
-      border 20px solid transparent
-      border-right 20px solid #3ec5d1
-      border-bottom 20px solid #3ec5d1
-
+    
     &:before
       content ''
       display block
@@ -45,7 +40,25 @@
     span
       color #3abdc9
       
+  &__lines
+    position absolute
+    right 0
+    top 0
+    width 50px
+    height 100%
+    background-color #3abdc9
+    
+    &:after 
+      position absolute
+      content: "";
+      background-color #3abdc9
+      width 100px
+      height 100%
+      z-index: 1;
+      transform-origin: 0 0;
+      transform: skewX(-30deg);
 
+    
 .blockquote
   border-left 3px solid #3ec5d1
   colors #444444
@@ -53,3 +66,68 @@
   font-weight 400
   line-height 28px
   padding 10px 15px
+  
+
+.works
+  +md-min()
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+  &__item
+    display block
+    width calc(50% - 20px)
+    min-width calc(50% - 20px)
+    
+
+.work
+  margin-bottom 25px
+  position relative
+  +md-min()
+    margin-bottom 50px
+    height 180px
+    display flex
+    flex-direction column
+    justify-content center
+  &--clear
+    align-items flex-end
+    .work__title
+      font-size 16px
+      
+    &:before
+      content ''
+      width 70%
+      height 100%
+      background-color #fafafa
+      transform skewX(-45deg) translate(20%,0%)
+      position absolute
+      z-index -1
+      left 0
+
+
+  &__desc
+    display block
+    margin-right 25%
+    +md-min()
+      width 50%
+  &__img
+    +md-min()
+      position absolute
+      right 0
+      top 0
+    
+  &__title
+    color #444444
+    font-size 24px
+    font-weight 400
+    line-height 28px
+    margin-bottom 10px
+    
+    &--small
+      font-size 16px
+      
+  &__btn 
+    color #3abdc9
+    font-size 16px
+    font-weight 700
+    text-decoration: underline
+    
