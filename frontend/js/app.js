@@ -31,7 +31,6 @@ for(let i = 0; i < scrollElems.length; i++){
   const elem = scrollElems[i];
   
   elem.addEventListener('click',function(e) {
-      console.log('tqtqwtqwtqwrtq');
    e.preventDefault();
    
    // 1. Get the element id to which you want to scroll
@@ -55,3 +54,17 @@ for(let i = 0; i < scrollElems.length; i++){
  })
 }
   
+
+
+
+$(function (){
+  console.log('init 0.1');
+  
+  $('#nav-toggler').click(function(e){
+    var target = $(this).data('target');
+    console.log('qweqwe',target);
+    $('#'+target).toggleClass('nav__list--active');
+  });  
+
+});
+

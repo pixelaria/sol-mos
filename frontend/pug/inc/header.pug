@@ -16,7 +16,7 @@ header.header
         a(href='tel:+79035395352').header__phone
           span +7 903 
           | 539 53 52
-      nav.header__part.header__part--men.nav
+      nav.header__part.header__part--menu.nav
         ul.nav__list#nav
           each val, index in ['Оборудование в аренду', 'Продажа оборудования', 'Услуги', 'О компании']
             li.nav__item.nav__item--parent
@@ -27,11 +27,11 @@ header.header
                 while n < 4
                   - n++
                   li.nav__item
-                    a.nav__link Подпункт
-      .navbar-toggler(data-target="#nav")
+                    a.nav__link(href="#") Подпункт
+      .navbar-toggler#nav-toggler(data-target="nav")
         span.navbar-toggler__bar
         span.navbar-toggler__bar
-        span.navbar-toggler__bar
+        span.navbar-toggler__bar 
 
   
 
