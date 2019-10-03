@@ -76,7 +76,10 @@
   flex-direction column
   align-items center
   justify-content space-between
-  
+
+  +lg-min()
+    display none
+
   &__bar
     background #fff
     display block
@@ -88,7 +91,6 @@
   width 80px
   +lg-min()
     width 120px
-  
 
 .nav
   &__list
@@ -109,7 +111,9 @@
     background-color: #ffffff;
 
     width: 100%;
-    
+
+    +lg-min()
+      background-color transparent
     
     &--active 
       opacity: 1;

@@ -50,7 +50,8 @@
     width 30%
     min-width 30%
     margin-right 40px
-.toolbar 
+
+.toolbar
   display block
   +md-min()
     display flex
@@ -105,22 +106,37 @@
       justify-content flex-end
   
   &__item
+    display flex
+    flex-direction row
+    align-items center
+    justify-content flex-start
+    flex-wrap nowrap
+    
     color #999999
-    margin-right 7px
+    margin-right 15px
     cursor pointer
     
     &:last-child 
       margin-right 0
 
+    &:after
+      content ''
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      background-image url('../images/icon-sort.png')
+      background-position center
+      background-repeat no-repeat
+      background-size cover
+
     &--active
       color #3abdc9
+      &:after
+        background-image url('../images/icon-sort-active.png')
       
-    &--asc
-      display block
-    &--desc
-      display block
-    
-        
+    &--asc:after
+      transform rotateX(180deg)
     
 .listing
   display block
@@ -258,7 +274,7 @@
     
 .sale
   background-color #fafafa
-  
+
   &__image
     display block
   
@@ -278,16 +294,26 @@
     
 
 .partners
+  &__list
+    +md-min()
+      display flex
+      justify-content space-between
+      align-items center
+
   &__item
     display flex
     justify-content flex-start
     align-items center
     margin-bottom 15px
+
+    +md-min()
+      flex-basis calc(25% - 20px)
+
   &__img
     display block
     width 70px
     min-width 70px
-    margin-right 12px
+    margin-right 20px
   &__title
     color #444444
     font-size 14px
