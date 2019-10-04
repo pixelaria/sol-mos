@@ -10,7 +10,7 @@ header.header
         button.button.button--popup Оставить заявку
   .header__main
     .container.header__container
-      .header__part.header__part--logo
+      a.header__part.header__part--logo(href="/")
         img.logo(src='images/logotype.png' alt='logotype')
       .header__part.header__part--phone
         a(href='tel:+79035395352').header__phone
@@ -18,23 +18,41 @@ header.header
           | 539 53 52
       nav.header__part.header__part--menu.nav
         ul.nav__list#nav
-          each val, index in ['Оборудование в аренду', 'Продажа оборудования', 'Услуги', 'О компании']
-            li.nav__item.nav__item--parent
-              a.nav__link.link(href="#") #{val}
-              .nav__toggler
+          li.nav__item.nav__item--parent
+            a.nav__link.link(href="/rent.html") Оборудование в аренду
+            .nav__toggler
               ul.nav__sublist
-                - var n = 0;
-                while n < 4
-                  - n++
-                  li.nav__item
-                    a.nav__link(href="#") Подпункт
+                li.nav__item
+                  a.nav__link(href="/rent_1.html") Строительные подъемники
+                  a.nav__link(href="/rent_2.html") Подъемные машины
+                  a.nav__link(href="/rent_3.html") Автомобильные краны
+                  a.nav__link(href="/rent_4.html") Башенные краны
+                  a.nav__link(href="/rent_5.html") Электроснабжение
+          li.nav__item.nav__item--parent
+            a.nav__link.link(href="/sale.html") Продажа оборудования
+            .nav__toggler
+              ul.nav__sublist
+                li.nav__item
+                  a.nav__link(href="/sale_1.html") Строительные подъемники
+                  a.nav__link(href="/sale_2.html") Подъемные машины
+                  a.nav__link(href="/sale_3.html") Автомобильные краны
+                  a.nav__link(href="/sale_4.html") Башенные краны
+                  a.nav__link(href="/sale_5.html") Электроснабжение
+          li.nav__item.nav__item--parent
+            a.nav__link.link(href="/service.html") Услуги
+            .nav__toggler
+              ul.nav__sublist
+                li.nav__item
+                  a.nav__link(href="/service_1.html") Управление
+                li.nav__item
+                  a.nav__link(href="/service_2.html") Диагностика и ремонт
+                li.nav__item
+                  a.nav__link(href="/service_3.html") Производство
+                li.nav__item
+                  a.nav__link(href="/service_4.html") Прочее
+          li.nav__item
+            a.nav__link.link(href="#") О компании
       .navbar-toggler#nav-toggler(data-target="nav")
         span.navbar-toggler__bar
         span.navbar-toggler__bar
         span.navbar-toggler__bar 
-
-  
-
-
-    
-

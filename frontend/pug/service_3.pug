@@ -1,0 +1,66 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Производство строительных работ
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page-start
+            ul.page-start__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/services.html") Наши услуги
+              li.breadcrumbs__item 
+                | Производство строительных работ
+      section.section.section--service
+        .container
+          h1.section__title
+            span ПРОИЗВОДСТВО
+            | СТРОИТЕЛЬНЫХ РАБОТ
+          p.blockquote Наша организация может выполнить строительные работы любой сложности, а также любых этапов строительства: 
+          .works
+            .works__item.work
+              .work__desc
+                p.work__title Земельные и дорожные работы 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Работы по озеленению и планированию
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Работы по прокладке коммуникаций 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Строительство и монтаж металлоконструкций
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Монолитное строительство
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Внутренние и внешние отделочные работы
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work.work--clear
+              .work__desc
+                p.work__title На оборудовании нулевого цикла наши операторы способны работать со всем спектром навесного оборудования.
+    include inc/footer.pug
+    

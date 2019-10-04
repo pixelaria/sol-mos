@@ -1,0 +1,51 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title Другие услуги, сопровождающие строительный процесс
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page-start
+            ul.page-start__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/services.html") Наши услуги
+              li.breadcrumbs__item 
+                | Другие услуги, сопровождающие строительный процесс
+      section.section.section--service
+        .container
+          h1.section__title
+            span ДРУГИЕ УСЛУГИ 
+            | СОПРОВОЖДАЮЩИЕ СТРОИТЕЛЬНЫЙ ПРОЦЕСС
+          p.blockquote Рады предложить своих специалистов для выполнения ряда задач не связанных со строительным оборудованием: 
+          .works
+            .works__item.work
+              .work__desc
+                p.work__title Дизелисты (персонал, способный осуществлять круглосуточное обслуживание ДГУ, а так же дизельных отопителей любой мощности)
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Приемщики тары на этажах и стропальщики (персонал, необходимый для полноценного сопровождения работ грузоподъемных машин и механизмов)
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Электрики (персонал, необходимый для проведения электротехнических работ на строительном объекте) 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+            .works__item.work
+              .work__desc
+                p.work__title Разработка П.П.Р., а так же другой технической документации по производству рабочей документации на строительную площадку). 
+                a.work__btn Заказать
+              .work__img
+                img.img.img--responsive(src="https://via.placeholder.com/180")  
+    include inc/footer.pug
+    

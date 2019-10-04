@@ -1,0 +1,62 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title main page sol mos
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page-start
+            ul.page-start__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") О компании
+              li.breadcrumbs__item 
+                | Наши проекты
+            h1.page-start__title 
+              | Наши 
+              span проекты
+      section.section.section--projects
+        .container
+          .projects
+            article.projects__item.project.project--big.project--text
+              .project__inner
+                .project__desc
+                  h1.project__title Заказчик: ЗАО «Служба механизации»
+                  p.project__text Аренда высокоскоростного грузопассажирского подъемника ALIMAK Scando 650 32/39 FC, при строительстве ЖК «Домашний», г. Москва, ул. Донецкая, владение 30.
+                  p.project__text Высота мачты подъёмника более 100 метров, грузоподъёмность 3,2 тонны.
+                  p.project__text ЖК «Домашний» - современный микрорайон комфорт-класса, разработанный в известном голландском архитектурном бюро MLA+. Проект крупномасштабной застройки расположится на ул. Донецкая, владение 30, на берегу Москвы-реки. 
+                  p.project__text Новый жилой квартал станет самой современной и благоустроенной частью сложившегося района Марьино. Общая площадь нового фонда составит 336,5 тыс. кв.      
+            article.projects__item.project.project--text
+              .project__inner
+                .project__desc
+                  h1.project__title Заказчик ООО «Баркли Констракшн Систем»
+                  p.project__text Аренда грузопассажирских подъемников при строительстве ЖК «Barkli Residence» г. Москва, ул. Орджоникидзе, вл. 1.
+            article.projects__item.project
+              .project__inner
+                .project__img
+                  img.img.img--responsive(src="../images/project-1.png")
+            article.projects__item.project
+              .project__inner
+                .project__img
+                  img.img.img--responsive(src="../images/project-2.png")
+            article.projects__item.project
+              .project__inner
+                .project__img
+                  img.img.img--responsive(src="../images/project-3.png")
+      section.section
+        .container
+          h2.section__title ОБЪЕКТЫ ОБСЛУЖИВАНИЯ:
+          p.section__text Комплексное обслуживание строительного оборудования; предоставление услуг по монтажу, демонтажу и наращиванию грузоподъемного оборудования; услуги машинистов и дизелистов. Заказчик ООО "РАМИРЕНТ" (Москва), ЗАО "РАМИРЕНТ" (Питер)
+          p.section__text Комплексное обслуживание башенных кранов; услуги по монтажу, демонтажу и наращиванию кранов. Заказчик ООО "ШТРАЙФ Баулогистик Руссланд"
+          p.section__text Предоставление услуг по монтажу (сборке), демонтажу и обслуживанию модульных зданий и бытовых комплексов. Заказчик ООО "ЭЛМАКО"
+            
+
+
+
+
+    include inc/footer.pug
+            
