@@ -31,8 +31,7 @@ const gulpif = require('gulp-if');
 const processors = [
 autoprefixer({browsers: ['last 5 version']}),
 postcssPresetEnv(),
-focus(), 
-pxtorem(), 
+focus(),  
 ];
 
 const cssmin = [

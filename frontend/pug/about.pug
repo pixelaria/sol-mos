@@ -1,0 +1,56 @@
+doctype html
+html(lang='ru')
+  head
+    include inc/head.pug
+    title main page sol mos
+  body
+    include inc/header.pug
+    main.main
+      section.section.section--page
+        .container
+          .page-start
+            ul.page-start__breadcrumbs.breadcrumbs
+              li.breadcrumbs__item
+                a.breadcrumbs__link(href="/") Главная
+              li.breadcrumbs__item 
+                | О компании
+            h1.page-start__title 
+              | О 
+              span Компании
+      section.section.section--services
+        .container
+          .about
+            .section__desc.about__desc
+              p.section__text «СОЛ-Сервис» — поставщик услуг с опытом работы в сфере аренды и продажи Строительного оборудования более 10 лет, способный удовлетворить нужды разных этапов строительства. Динамичное развитие нашей компании позволяет иметь большой, пополняемый парк строительной техники.
+              p.section__text Важной составляющей компании является комплексный подход к потребностям заказчика и наличие богатого спектра услуг: продажа, аренда, доставка, монтаж, индивидуальные проекты.
+              p.section__text.section__text--bold Гибкая система скидок. Индивидуальный подход к каждому заказчику.
+
+            .section__img.about__img
+              img.img.img--responsive(src="/images/about.png")
+            
+          .section__subtitle Сертификаты:
+          .sert
+            .sert__item
+              img.img.img--responsive.sert__img(src="/images/sert-1.png")
+            .sert__item
+              img.img.img--responsive.sert__img(src="/images/sert-2.png")
+            .sert__item
+              img.img.img--responsive.sert__img(src="/images/sert-3.png")
+            .sert__item
+              img.img.img--responsive.sert__img(src="/images/sert-4.png")
+          
+          .section__subtitle Вакансии:
+          p.section__text Требуются аттестованные специалисты с опытом работы по профилю не менее 3-х лет:
+          ul.section-list
+            li.section-list__item Мастер наладчик грузоподъемных машин и механизмов;
+            li.section-list__item Монтажник грузоподъемных машин и механизмов;
+            li.section-list__item Механик по обслуживанию грузоподъемных машин и механизмов;
+            li.section-list__item Машинист строительных подъемников.
+          p.section__text НАЧАЛЬНИК ОТДЕЛА ПО ВОПРОСАМ ТРУДОУСТРОЙСТВА:
+          p.section__text Каминская Екатерина Михайловна 
+          p.section__text + 7 916 718 5095 
+          p.section__text sol-group@mail.ru
+            
+    include inc/footer.pug
+
+    

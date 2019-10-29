@@ -75,3 +75,256 @@
 
   &__text:last-child
     margin-bottom 0
+
+
+
+
+
+.nav__link {
+  text-align: left;
+}
+
+.nav__list {
+  background-color: #fafafa;
+}
+
+.nav__sublist .nav__item {
+  margin-right: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.products-item__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.products-item__image:before {
+  content: '';
+  padding-bottom: 100%;
+  display: block;
+}
+
+.products-item__image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.woocommerce-pagination {
+  display: flex;
+  justify-content: center;
+}
+.page-numbers {
+  display: flex;
+}
+
+.page-numbers li {
+  padding: 15px;
+  color: #3abdc9;
+}
+
+.page-numbers a {
+  color: #444444;
+}
+
+.page-numbers a:hover {
+  color: #3abdc9;
+}
+
+.sidebar {
+  list-style: none;
+}
+
+.sidemenu__sublist {
+  padding-left: 15px;
+}
+
+/* popups */
+
+.popup__title {
+  background-color: #349eb6;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px;
+}
+.popup__content {
+  padding: 40px 30px 15px 30px;
+}
+
+#fancybox-content {
+  border: none !important;
+}
+
+.popup__group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup__label {
+  flex-basis: 25%;
+  min-width: 25%;
+}
+
+.popup__field input {
+  height: 50px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  width: 100%;
+}
+.popup__submit input {
+  height: 50px;
+  background-color: #3abdc9;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+#fancybox-wrap, #fancybox-content{
+  width: 400px !important;
+}
+
+.service-advantages-form__fields .wpcf7-form-control-wrap {
+  width: 40%;
+}
+.service-advantages-form__fields input {
+  width: 100%;
+}
+.service-advantages-form .wpcf7-submit {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    padding: 0 20px;
+    transition: background-color .3s ease-in-out;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3abdc9;
+    background-color: #3abdc9;
+}
+.page-contacts {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.page-contacts__title {
+  margin-bottom: 10px;
+}
+
+.page-contacts__item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 80px;
+  padding-top: 5px;
+}
+.page-contacts__item:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+.page-contacts__item--1:before {
+  background-image: url('../images/contacts-1.png');
+}
+.page-contacts__item--2:before {
+  background-image: url('../images/contacts-2.png');
+}
+.page-contacts__item--3:before {
+  background-image: url('../images/contacts-3.png');
+}
+.page-contacts__item--4:before {
+  background-image: url('../images/contacts-4.png');
+}
+.page-contacts__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2d3e50;
+  margin-bottom: 10px;
+
+}
+
+.contacts__desc {
+
+}
+
+.about
+  display flex
+  flex-direction row
+  flex-wrap nopwrap
+  margin-bottom: 30px;
+  
+  &__img 
+    flex-basis 25%
+  &__desc
+    flex-basis 75%
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 30px;
+
+.sert
+  display: flex;
+  flex-direction: row
+  flex-wrap nowrap
+  justify-content space-between
+  margin-bottom: 30px;
+
+  &__item 
+    width calc(25% - 15px)
+
+.section
+  &__text
+    margin-bottom: 15px;
+    line-height 24px
+    &--bold
+      font-weight bold
+
+  &__subtitle 
+    color: #444444;
+    font-family: "Circe Bold - Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform uppercase
+    margin-bottom: 30px;
+
+  &__list
+    margin-bottom: 0;
+.section-list
+  list-style none
+  margin-bottom: 30px;
+  
+  &__item
+    display: flex;
+    flex-direction: row
+    align-items center
+    
+    &:before
+     content: '-'
+     margin-right: 5px;
+     margin-left: 5px;
