@@ -196,13 +196,13 @@
 }
 
 .service-advantages-form__fields .wpcf7-form-control-wrap {
-  width: 40%;
+  width: 32%;
 }
 .service-advantages-form__fields input {
   width: 100%;
 }
 .service-advantages-form .wpcf7-submit {
-    width: 100%;
+    width: 32%;
     margin-bottom: 25px;
     font-size: 1rem;
     display: -webkit-box;
@@ -217,6 +217,9 @@
     justify-content: center;
     border: 1px solid #3abdc9;
     background-color: #3abdc9;
+}
+.service-advantages-form .ajax-loader {
+  display:none !important;
 }
 .page-contacts {
   margin-top: 50px;
@@ -328,3 +331,63 @@
      content: '-'
      margin-right: 5px;
      margin-left: 5px;
+
+
+#fancybox-wrap {
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto;
+    height: auto !important;
+}
+
+.wpcf7-textarea {
+    width: 100%;
+}
+
+.container
+  +md-min()
+    padding 0 85px
+
+.page 
+  &__btn 
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to right, #3fc6d2 0%, #3aabc9 100%);
+    display: block;
+    position: absolute;
+    right: 1%;
+    z-index: 82;
+    border-radius: 50%;
+    top: -70%;
+
+.section-list__item
+  line-height 28px
+
+.section__text 
+  marign-bottom 10px
+
+.err-404
+  text-align center
+
+  &__title
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #3ec1d0;
+    font-weight: bold;
+    margin-bottom: 15px;
+  &__subtitle
+    text-align: center;
+    font-size: 24px;
+    width: 400px;
+    margin: auto;
+    color: #444;
+    margin-bottom 15px
+
+.section--404
+  height 100%
+  .container
+    height 100%
+    display flex
+    align-items center
+    justify-content center

@@ -17,6 +17,9 @@
     line-height 36px
     margin-bottom 10px
     padding-right 60px
+
+    +lg-min()
+      font-size 24px
     
   &__item
     display block
@@ -34,6 +37,7 @@
       font-size 16px
       font-weight 300
       line-height 28px
+      margin-bottom 15px
       strong
         font-weight 700
      
@@ -44,6 +48,9 @@
     &:not(:last-child)
       background-color #fafafa
       padding 40px 20px
+
+      +lg-min()
+        padding 50px
       &:before
         color #3abdc9
         font-size 100px
@@ -74,3 +81,4 @@
   &__button
     width 100%
     margin-bottom 25px
+
